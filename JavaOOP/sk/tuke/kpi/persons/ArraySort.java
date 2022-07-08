@@ -1,4 +1,4 @@
-package persons;
+package sk.tuke.kpi.persons;
 
 public class ArraySort {
     public void sort(CompareObject[] objArr){

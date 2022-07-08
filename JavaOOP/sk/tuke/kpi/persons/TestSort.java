@@ -1,4 +1,4 @@
-package persons;
+package sk.tuke.kpi.persons;
 
 public class TestSort {    
     public static void main(String[] args){

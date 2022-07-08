@@ -1,3 +1,5 @@
+package arrays;
+
 public class EnhancedForDemo {
     public static void main(String[] args) {
         int[] primes = { 2, 3, 5, 7, 11,

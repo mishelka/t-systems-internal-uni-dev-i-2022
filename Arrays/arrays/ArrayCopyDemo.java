@@ -1,9 +1,12 @@
+package arrays;
+
 public class ArrayCopyDemo {
     private static long startTime;
     private static long endTime;
     private static int iteration = 0;
 
     public static void main(String[] args) {
+        int[] arrayToSort = {10, 5, 1, 6, 19};
         int[] copyFrom = new int[11000];
         int[] copyTo = new int[11000];
         int[] copyFrom2 = new int[11000];
@@ -34,6 +37,8 @@ public class ArrayCopyDemo {
 //            System.out.print(i + ",");
 //        }
 //        System.out.println();
+
+        bubbleSort(arrayToSort);
     }
 
     private static boolean arraycopy(int[] source, int srcIndex,
@@ -62,5 +67,14 @@ public class ArrayCopyDemo {
         endTime = System.currentTimeMillis();
         System.out.println("Loop " + ++iteration + " duration: "
                 + (endTime - startTime) + " milliseconds");
+    }
+
+    private static void bubbleSort(int[] array) {
+        //zotriedit pole pomocou bubble sort
+        //pomocna funkcia swap
+    }
+
+    private static void printArray(int[] array) {
+        //vypisat polozky v poli
     }
 }
