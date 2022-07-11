@@ -2,12 +2,12 @@ package myPersons;
 
 public class PersonMain {
     public static void main(String[] args) {
-        MyPerson[] persons = {
-          new MyPerson("Janko"),
-          new MyPerson("Peter", 20),
+        Person[] persons = {
+          new Person("Janko"),
+          new Person("Peter", 20),
         };
 
-        for (MyPerson person : persons) {
+        for (Person person : persons) {
             System.out.println(person);
         }
     }

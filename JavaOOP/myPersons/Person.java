@@ -1,15 +1,15 @@
 package myPersons;
 
-public class MyPerson {
+public class Person {
     private String name;
     private int age;
 
-    public MyPerson(String name) {
+    public Person(String name) {
         this(name, 0);
         this.name = name;
     }
 
-    public MyPerson(String name, int age) {
+    public Person(String name, int age) {
         this.name = name;
         //if not valid, set default age 0
         this.age = age;
