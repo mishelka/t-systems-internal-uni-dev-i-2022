@@ -1,38 +1,31 @@
 package shapes;
 
 public class Line extends Shape {
-    private final Point from;
+    int size;
 
-    private final Point to;
-
-    public Line(Point from, Point to) {
-        this.from = from;
-        this.to = to;
+    public Line(int size) {
+        //super(); //toto sa vola, pokial nadtrieda ma taky konstruktor
+        this.size = size;
     }
 
-    public Line(Point from, Point to, int color) {
+    public Line(int size, char color) {
         super(color);
-        this.from = from;
-        this.to = to;
+        this.size = size;
     }
 
-    public Point getFrom() {
-        return from;
+    public int getSize() {
+        return size;
     }
 
-    public Point getTo() {
-        return to;
-    }
-
-    public void move(int dx, int dy) {
-        getFrom().move(dx, dy);
-        getTo().move(dx, dy);
+    public void setSize(int size) {
+        this.size = size;
     }
 
     public String toString() {
-        if (getFrom() != null && getTo() != null) {
-            return "(" + getFrom().toString() + ") -> (" + getTo().toString() + ")" + super.toString();
+        String s = "";
+        for (int i = 0; i < size; i++) {
+            s += super.color;
         }
-        return "? -> ?"  + super.toString();
+        return s;
     }
 }

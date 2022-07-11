@@ -1,23 +1,21 @@
 package shapes;
 
 public abstract class Shape {
-    private int color;
+    protected char color;
 
     public Shape() {
-        this(0);
+        this('*');
     }
 
-    public Shape(int color) {
+    public Shape(char color) {
         this.color = color;
     }
-
-    public abstract void move(int dx, int dy);
 
     public int getColor() {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(char color) {
         this.color = color;
     }
 
