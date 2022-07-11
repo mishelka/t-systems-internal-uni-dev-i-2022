@@ -1,8 +1,12 @@
 package myPersons;
 
+import cars.Car;
+
 public class Person {
+    public static final String JAHODA = "Jahoda";
     private String name; // = null;
     private int age; // = 0;
+    private Car car;
 
     public Person(String name) {
         this(name, 5);
@@ -33,6 +37,14 @@ public class Person {
         }
     }
 
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
     private boolean isValidAge(int ageNew) {
         return ageNew >= 0 && ageNew <= 150;
     }
@@ -42,6 +54,7 @@ public class Person {
         return "MyPerson{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                (car != null ? ", car=" + car : "") +
                 '}';
     }
 }

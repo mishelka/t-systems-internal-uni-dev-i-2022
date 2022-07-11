@@ -11,7 +11,7 @@ public class TestShapes {
         };
 
         for (Shape s: shapes) {
-            System.out.println(s);
+            s.print();
         }
     }
 }

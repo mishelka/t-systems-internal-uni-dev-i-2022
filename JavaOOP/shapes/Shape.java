@@ -19,7 +19,5 @@ public abstract class Shape {
         this.color = color;
     }
 
-    public String toString() {
-        return ": color = " + color;
-    }
+    public abstract void print();
 }

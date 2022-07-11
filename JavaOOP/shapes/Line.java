@@ -28,4 +28,9 @@ public class Line extends Shape {
         }
         return s;
     }
+
+    @Override
+    public void print() {
+        System.out.println(this.toString());
+    }
 }

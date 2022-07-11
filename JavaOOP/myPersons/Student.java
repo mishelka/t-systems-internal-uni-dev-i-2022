@@ -2,6 +2,7 @@ package myPersons;
 
 public class Student extends Person {
     private String isicNumber;
+    private String surname;
 
     public Student(String name, String isicNumber) {
         super(name);
