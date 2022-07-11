@@ -1,18 +1,18 @@
 package myPersons;
 
 public class Person {
-    private String name;
-    private int age;
+    private String name; // = null;
+    private int age; // = 0;
 
     public Person(String name) {
-        this(name, 0);
-        this.name = name;
+        this(name, 5);
     }
 
     public Person(String name, int age) {
         this.name = name;
-        //if not valid, set default age 0
-        this.age = age;
+        if(isValidAge(age)) {
+            this.age = age;
+        }
     }
 
     public String getName() {
@@ -28,8 +28,13 @@ public class Person {
     }
 
     public void setAge(int age) {
-        //check age, don't set if not valid
-        this.age = age;
+        if(isValidAge(age)) {
+            this.age = age;
+        }
+    }
+
+    private boolean isValidAge(int ageNew) {
+        return ageNew >= 0 && ageNew <= 150;
     }
 
     @Override
