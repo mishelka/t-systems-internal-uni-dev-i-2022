@@ -1,6 +1,6 @@
 public class Palindrome {
 	public static void main(String[] args) {
-		String palindrome = "jarko";
+		String palindrome = "Kajak a kajak";
 		int len = palindrome.length();
 		StringBuilder dest = new StringBuilder(len);
 		for (int i = (len - 1); i >= 0; i--) {

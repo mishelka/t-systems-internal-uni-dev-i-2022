@@ -19,16 +19,17 @@ public class Person implements CompareObject {
     
     public String toString() {
         return firstName + " " + lastName;
-    } 
-    
+    }
+
+    @Override
     public int compareTo(CompareObject obj) {
         if(!(obj instanceof Person))
             return -1;
-        
-        int res = lastName.compareTo(((Person)obj).lastName);
+        Person p2 = (Person) obj;
+        int res = lastName.compareTo(p2.lastName);
         if(res != 0)
             return res;
-        
-        return firstName.compareTo(((Person)obj).firstName);
+
+        return firstName.compareTo(p2.firstName);
     }
 }

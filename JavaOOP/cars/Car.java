@@ -1,8 +1,10 @@
 package cars;
 
-public class Car {
+import sk.tuke.kpi.persons.CompareObject;
+
+public class Car implements CompareObject {
     private String brand;
-    private boolean started;
+    protected boolean started;
 
     public Car(String brand) {
         this.brand = brand;
@@ -33,5 +35,13 @@ public class Car {
         return brand + '(' +
                 (started ? "started" : "stopped") +
                 ')';
+    }
+
+    @Override
+    public int compareTo(CompareObject obj) {
+        if(!(obj instanceof Car)) {
+            return -1;
+        }
+        return this.brand.compareToIgnoreCase(((Car)obj).brand);
     }
 }
