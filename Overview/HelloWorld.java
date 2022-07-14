@@ -1,7 +1,7 @@
-public class HelloWorld {
+public class HelloWorldd {
     static void main(String[] gef) {
-       System.out.println("!Hello!");
+       System.out.println("!Hello World");
     }
-
-    //koment za metodou
 }
+
+//tu bude ten komentar a hotovo!
