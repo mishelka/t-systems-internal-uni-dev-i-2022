@@ -1,6 +1,6 @@
 public class HelloWorld {
     static void main(String[] gef) {
-       System.out.println("!World jjklfdjslka");
+       System.out.println("!Hello!");
     }
 
     //koment za metodou
