@@ -1,7 +1,9 @@
 public class HelloWorld {
+
+    //koment na zaciatku
     static void main(String[] gef) {
-       System.out.println("!Hello!");
+       System.out.println("!Hellooooooooooooo!");
     }
 
-    //koment za metodou
+    //koment za metodouuuuuuuuuuu
 }
