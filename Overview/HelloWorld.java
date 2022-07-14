@@ -1,5 +1,7 @@
 public class HelloWorld {
-    static void main(String[] args) {
-       System.out.println("Hello World!");
+    static void main(String[] gef) {
+       System.out.println("!World jjklfdjslka");
     }
+
+    //koment za metodou
 }
