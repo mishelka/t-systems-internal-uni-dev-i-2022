@@ -4,11 +4,11 @@ public class NullPointerExceptionTest {
     private static String s;
 
     public NullPointerExceptionTest(String s) {
+        this.s = s.toLowerCase();
         makeLowerCase();
     }
 
     private void makeLowerCase() {
-        s = s.toLowerCase();
         System.out.println(s);
     }
 

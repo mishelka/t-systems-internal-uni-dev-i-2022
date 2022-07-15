@@ -7,9 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class IOTestException {
-    static class MyException extends Exception {
-        
-    }
+    static class MyException extends Exception { }
 
     public static void main(String[] args) {
         try {
