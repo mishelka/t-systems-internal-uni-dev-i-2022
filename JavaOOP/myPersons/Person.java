@@ -74,4 +74,14 @@ public class Person implements Comparable<Person> {
         }
         return nameCompare;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof Person)) {
+            return false;
+        }
+        Person p2 = (Person) obj;
+        return p2.getName().equals(name) &&
+                p2.getAge() == age;
+    }
 }

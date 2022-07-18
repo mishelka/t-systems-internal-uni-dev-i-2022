@@ -13,7 +13,9 @@ public class ArraysTest {
         
         //String[] oa = (String[]) list.toArray();
         String[] sa = list.toArray(new String[] {});
-        
+
+        System.out.println(sa);
+
         List<String> sl = Arrays.asList(sa);
         
         System.out.println(sl);

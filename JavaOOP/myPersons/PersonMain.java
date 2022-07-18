@@ -1,19 +1,28 @@
 package myPersons;
 
 import cars.Car;
+import myPersons.exceptions.MojaPersonDbException;
 
 import java.util.Arrays;
 
 public class PersonMain {
     public static void main(String[] args) {
-        Person[] persons = {
-          new Person("Janko"),
-          new Person("Peter", 20),
-          new Person("Michaela", 250),
-          new Student("Marian", "12345"),
-          new Student("Robert", 99, "65532"),
-          new Employee("Robert", 99, "master mega chief")
-        };
+//        Person[] persons = {
+//          new Person("Janko"),
+//          new Person("Peter", 20),
+//          new Person("Michaela", 250),
+//          new Student("Marian", "12345"),
+//          new Student("Robert", 99, "65532"),
+//          new Employee("Robert", 99, "master mega chief")
+//        };
+        Person[] persons = {};
+        PersonDatabaseReader reader = new PersonDatabaseReader();
+
+        try {
+            persons = reader.readPersonsFromDb();
+        } catch (MojaPersonDbException e) {
+            System.out.println(e.getMessage());
+        }
 
         persons[4].setCar(new Car("Toyota"));
         persons[5].setCar(new Car("BMW"));

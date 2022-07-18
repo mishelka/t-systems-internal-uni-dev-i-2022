@@ -19,5 +19,7 @@ public class Algoritms {
         System.out.println(list);
         Collections.reverse(list);
         System.out.println(list);
+
+        list.remove(3);
     }
 }

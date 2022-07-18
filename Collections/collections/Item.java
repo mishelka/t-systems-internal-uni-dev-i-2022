@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * One item of product catalog.
  */
-public class Item implements /*Comparable<Item>,*/ Serializable {
+public class Item implements Comparable<Item>, Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String code;
@@ -48,7 +48,7 @@ public class Item implements /*Comparable<Item>,*/ Serializable {
 		this.price = price;
 	}
 
-
+	@Override
 	public int compareTo(Item o) {
 		return code.compareTo(o.code);
 	}
@@ -69,12 +69,12 @@ public class Item implements /*Comparable<Item>,*/ Serializable {
 	// o1.hashCode() == o2.hashCode()
 	public int hashCode() {
 		//Zle zvoleny hash code
-		return (int)price;
+//		return (int)price;
 
 		//Dobre zvoleny hashCode
-		//return code.hashCode();
+		return code.hashCode();
 
 		//Degenerovany hash code
-		//return 1;
+//		return 1;
 	}
 }

@@ -23,8 +23,8 @@ public class SetListTest {
 		Item item1 = new Item("IPQ", "IPAQ", 22);
 		Item item2 = new Item("IPQ", "IPAQ", 44);
 
-        //Set<Item> s = new HashSet<Item>();
-		Set<Item> s = new TreeSet<Item>();
+        Set<Item> s = new HashSet<Item>();
+//		Set<Item> s = new TreeSet<Item>();
 		s.add(item1);
 
 		System.out.println("Equals: " + item1.equals(item2));
