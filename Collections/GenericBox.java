@@ -1,4 +1,4 @@
-public class GenericBox<T> {
+public class GenericBox<T/* extends Number*/> {
     private T content;
 
     public void add(T content) {

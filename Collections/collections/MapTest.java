@@ -31,6 +31,8 @@ public class MapTest {
 		item = new Item("IPQ", "IPAQ2", 55);
 		map.put(item.getCode(), item);
 
+		System.out.println(map.get("IPQ"));
+
 		System.out.print(map);
 		System.out.println(":" + ((Object)map).getClass().getName());
 	}
