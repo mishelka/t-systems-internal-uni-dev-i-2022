@@ -1,20 +1,20 @@
 package threads;
 
-public class Producer extends Thread {
+public class Kuchar extends Thread {
     private final String name;
 
-    private ExchangeBuffer cubbyhole;
+    private RestauracnyPult restauracnyPult;
 
-    public Producer(String name, ExchangeBuffer c) {
+    public Kuchar(String name, RestauracnyPult c) {
         this.name = name;
-        this.cubbyhole = c;
+        this.restauracnyPult = c;
     }
 
     public void run() {
         for (int i = 0; i < 10; i++) {
-            cubbyhole.put(name, i);
+            restauracnyPult.put(name, i);
             try {
-                sleep(5000);
+                sleep(1000);
             } catch (InterruptedException e) {
             }
         }

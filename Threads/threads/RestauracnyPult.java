@@ -1,6 +1,6 @@
 package threads;
 
-public class ExchangeBuffer {
+public class RestauracnyPult {
     private int contents;
 
     private boolean available = false;
@@ -13,7 +13,7 @@ public class ExchangeBuffer {
             }
         }
         available = false;
-        System.out.println("Consumer " + who + " got: " + contents);
+        System.out.println("Casnik " + who + " got: " + contents);
 
         notifyAll();
 
@@ -29,7 +29,7 @@ public class ExchangeBuffer {
         }
         contents = value;
         available = true;
-        System.out.println("Producer " + who + " put: " + contents);
+        System.out.println("Kuchar " + who + " put: " + contents);
         
         notifyAll();
     }

@@ -4,6 +4,9 @@ import java.io.*;
 
 public class FileCopy {
     public static void main(String[] args) throws IOException {
+
+        //Settings.save()
+        //Settings.load()
 //        if(args.length != 2) {
 //            System.err.println("Usage java " + FileCopy.class.getCanonicalName() + " <source> <dest>");
 //            System.exit(-1);
